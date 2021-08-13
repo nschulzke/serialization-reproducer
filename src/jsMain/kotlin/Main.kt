@@ -7,9 +7,7 @@ import kotlinx.serialization.json.Json
 interface Interface
 
 @Serializable
-sealed class Subtype : Interface {
-    data class SubSubType(val value: String)
-}
+sealed class Subtype : Interface
 
 fun main() {
     val module = SerializersModule {
